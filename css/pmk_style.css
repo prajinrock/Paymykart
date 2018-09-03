@@ -171,6 +171,7 @@
 }
 .nav_outer{
   padding: 0px 20px;
+  z-index: 99;
 }
 .nav_outer .navbar-right{
   margin-right: 0px;
@@ -333,12 +334,31 @@
 .link_tag{
   cursor: pointer;
 }
-
+.nav_outer .navbar-toggle{
+  margin-right: 0px;
+}
 @media (max-width: 1365px) {
     .login_box{
       width: 100%;
     }
     .forClick{
       display: none;
+    }
+}
+@media (max-width: 767px) {
+    .nav_outer .navbar-collapse{
+      background-color: #f1f1f1;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+    }
+    .pmk_title{
+      line-height: 2;
+      font-size: 18px;
+    }
+    .wid50{
+      width: 100%;
+    }
+    .rech_radio{
+      margin-top: 10px;
     }
 }
