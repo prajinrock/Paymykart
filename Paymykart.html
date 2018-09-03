@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>xorbit</title>
+<title>PayMyKart</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-<link rel="icon" href="images/favicon_xorbit.png" type="image/gif" sizes="16x16">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" href="css/Google_MDL/material.min.css">
 <link rel="stylesheet" href="css/pmk_style.css">
@@ -16,7 +16,7 @@
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+      <div class="nav_outer">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -24,30 +24,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand flexBox al_cnt" href="#"><img src="images/logo.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="nav navbar-nav navbar-right nav_rht">
+            <li><a class="supprt_num" data-toggle="modal" data-target="#myModal">Support : 123456789</a></li>
+            <li><a id="login_btn" class="link_tag">Log In</a></li>
+            <li><a id="reg_btn" class="link_tag">Register</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a>Redeem Points</a></li>
+                <li><a>Logout</a></li>
               </ul>
             </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -85,12 +75,16 @@
 				      </div>
 				    </div>
 				    <div id="pmk_shop_2" class="tab-pane fade">
-				      <h3>Menu 1</h3>
-				      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				      <div  class="outer_wrap flexBox">
+				      	<div class="wid75"><input type="text" name="" class="shop_text" placeholder="Search"></div>
+				      	<div class="search_btn flexBox wid25"><button>Search</button></div>
+				      </div>
 				    </div>
 				    <div id="pmk_shop_3" class="tab-pane fade">
-				      <h3>Menu 2</h3>
-				      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				      <div  class="outer_wrap flexBox">
+				      	<div class="wid75"><input type="text" name="" class="shop_text" placeholder="Search"></div>
+				      	<div class="search_btn flexBox wid25"><button>Search</button></div>
+				      </div>
 				    </div>
 				  </div>
 				</div>
@@ -136,10 +130,11 @@
 					                <label class="mdl-textfield__label" for="sample3">Amount</label>
 					              </div>
 					    	</div>
+					    	<div class="rech_btn_holder flexBox js_right auto_rht">
+								<button class="rech_btn">Recharge</button>
+							</div>
 					    </div>
-						<div class="rech_btn_holder flexBox js_right">
-							<button class="rech_btn">Recharge</button>
-						</div>
+						
 				    </div>
 				    <div id="pmk_recharge_2" class="tab-pane fade">
 				      	<div class="outer_wrap flexBox">
@@ -161,10 +156,11 @@
 					                <label class="mdl-textfield__label" for="sample3">Amount</label>
 					              </div>
 					    	</div>
+					    	<div class="rech_btn_holder flexBox js_right auto_rht">
+								<button class="rech_btn">Recharge</button>
+							</div>
 					    </div>
-						<div class="rech_btn_holder flexBox js_right">
-							<button class="rech_btn">Recharge</button>
-						</div>
+						
 				    </div>
 				    <div id="pmk_recharge_3" class="tab-pane fade">
 				      <div class="outer_wrap flexBox">
@@ -186,10 +182,10 @@
 					                <label class="mdl-textfield__label" for="sample3">Amount</label>
 					              </div>
 					    	</div>
+					    	<div class="rech_btn_holder flexBox js_right auto_rht">
+								<button class="rech_btn">Recharge</button>
+							</div>
 					    </div>
-						<div class="rech_btn_holder flexBox js_right">
-							<button class="rech_btn">Recharge</button>
-						</div>
 				    </div>
 				    <div id="pmk_recharge_4" class="tab-pane fade">
 				      <div class="outer_wrap flexBox">
@@ -211,10 +207,11 @@
 					                <label class="mdl-textfield__label" for="sample3">Amount</label>
 					              </div>
 					    	</div>
+					    	<div class="rech_btn_holder flexBox js_right auto_rht">
+								<button class="rech_btn">Recharge</button>
+							</div>
 					    </div>
-						<div class="rech_btn_holder flexBox js_right">
-							<button class="rech_btn">Recharge</button>
-						</div>
+						
 				    </div>
 				  </div>
 				</div>
@@ -236,10 +233,11 @@
 						            <label class="mdl-textfield__label" for="sample3">Board</label>
 						      	</div>
 							</div>
+							<div class="rech_btn_holder flexBox js_right auto_rht">
+								<button class="rech_btn">Pay</button>
+							</div>
 						</div>
-						<div class="rech_btn_holder flexBox js_right">
-							<button class="rech_btn">Pay</button>
-						</div>
+						
 				    </div>
 				    <div id="pmk_utility_2" class="tab-pane fade">
 				      <div class="outer_wrap flexBox">
@@ -249,32 +247,21 @@
 						            <label class="mdl-textfield__label" for="sample3">Gas Provider</label>
 						      	</div>
 							</div>
+							<div class="rech_btn_holder flexBox js_right auto_rht">
+								<button class="rech_btn">Pay</button>
+							</div>
 						</div>
-						<div class="rech_btn_holder flexBox js_right">
-							<button class="rech_btn">Pay</button>
-						</div>
+						
 				    </div>
 				    <div id="pmk_utility_3" class="tab-pane fade">
 				    	<div class="outer_wrap flexBox">
-					      	<div class="wid50 flexBox">
-					    		<div class="rech_radio">
-									<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-6">
-									  <input type="radio" id="option-6" class="mdl-radio__button" name="options" value="1" checked>
-									  <span class="mdl-radio__label">Prepaid</span>
-									</label>
-									<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-7">
-									  <input type="radio" id="option-7" class="mdl-radio__button" name="options" value="2">
-									  <span class="mdl-radio__label">Postpaid</span>
-									</label>
-								</div>
-					    	</div>
 					    	<div class="wid50">
 				    			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 					                <input class="mdl-textfield__input" type="text" id="sample3">
-					                <label class="mdl-textfield__label" for="sample3">Mobile Number</label>
+					                <label class="mdl-textfield__label" for="sample3">Board</label>
 				              	</div>
 					    	</div>
-					    	<div class="rech_btn_holder flexBox js_right">
+					    	<div class="rech_btn_holder flexBox js_right auto_rht">
 								<button class="rech_btn">Pay</button>
 							</div>
 						</div>
@@ -287,7 +274,7 @@
 							        <label class="mdl-textfield__label" for="sample3">Operator</label>
 							  	</div>
 							</div>
-							<div class="rech_btn_holder flexBox js_right">
+							<div class="rech_btn_holder flexBox js_right auto_rht">
 								<button class="rech_btn">Pay</button>
 							</div>
 						</div>
@@ -496,10 +483,129 @@
     </div>
   </div> 
   <div class="bottom_graphix"><img src="images/grey_bg.jpg"></div>
-  
+  <!-- Pop Ups-->
+  <div class="hidn" id="pop_login">
+ <div class="pop_bgd flexBox">
+  <div class="forClick"></div>
+  <div class="login_box flexBox">
+    <div class="login_container">
+      <div class="login_title">Log In</div>
+      <div class="login_field">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="sample3">
+          <label class="mdl-textfield__label" for="sample3">Username</label>
+        </div>
+        <i class="fa fa-user"></i>
+      </div>
+      <div class="login_field">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="password" id="sample3">
+          <label class="mdl-textfield__label" for="sample3">Password</label>
+        </div>
+        <i class="fa fa-lock"></i>
+      </div>
+      <div class="log_reminder">
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+          <span class="mdl-checkbox__label">Remember me on this device</span>
+          <a href="#">Forgot Password?</a>
+        </label>
+      </div>
+      <div class="log_btn_holder">
+        <button>Login</button>
+      </div>
+    </div>
+    <div class="reg_board flexBox">
+      If you are a new user or like to join
+      <div class="reg_btn_holder">
+        <button>Register</button>
+      </div> 
+    </div>
+  </div>
+</div> 
+</div>
+<div class="hidn" id="pop_register">
+  <div class="pop_bgd flexBox">
+    <div class="forClick"></div>
+    <div class="login_box flexBox">
+      <div class="login_container">
+        <div class="login_title">Register</div>
+        <div class="login_field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">First Name</label>
+          </div>
+        </div>
+        <div class="login_field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Last Name</label>
+          </div>
+        </div>
+        <div class="login_field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Email/Mobile Number</label>
+          </div>
+        </div>
+        <div class="login_field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="password" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Password</label>
+          </div>
+        </div>
+        <div class="login_field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="password" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Confirm Password</label>
+          </div>
+        </div>
+        <div class="log_btn_holder">
+          <button>Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="pop_closer" id="popClose">
+  <img src="images/close_button.png">
+</div>
+
+<div class="modal fade" id="myModal" role="dialog"><!--POP UP-->
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sample Notification</h4>
+        </div>
+        <div class="modal-body">
+          <p>Email Verification sent successfully!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
   
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+<script>
+$(document).ready(function(){
+    $("#login_btn").click(function(){
+        $("#pop_login, #popClose").show();
+    });
+    $("#reg_btn").click(function(){
+        $("#pop_register, #popClose").show();
+    });
+    $(".forClick, #popClose").click(function(){
+        $("#pop_register, #pop_login, #popClose").hide();
+    });
+});
+</script>
 </body>
 </html>
