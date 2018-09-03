@@ -6,6 +6,7 @@
 *{
   box-sizing: border-box;
   transition: all .3s;
+  outline: none;
 }
 .big_frame{
   width: 100%;
@@ -32,6 +33,16 @@
 }
 .big_bg{
   background-color: #f1f1f1;
+}
+.bottom_graphix{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.bottom_graphix > img{
+  width: 100%;
 }
 .pmk_controller{
   width: 720px;
@@ -114,4 +125,42 @@
 .rech_btn_holder{
   width: 100%;
   padding: 20px 20px;
+}
+.wid75{
+  width: 75%;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  box-sizing: border-box;
+}
+.wid25{
+  width: 25%;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  box-sizing: border-box;
+}
+.shop_text{
+  height: 50px;
+  width: 100%;
+  border:none;
+  padding: 0px 20px;
+  font-size: 16px;
+}
+.search_btn{
+  padding: 5px;
+  justify-content: flex-end;
+}
+.search_btn > button{
+  background-color: #ebc518;
+  border:none;
+  border-radius:3px;
+  padding: 10px 20px;
+  font-weight: 400;
+}
+.navbar-default{
+  background-color: transparent;
+  border:none;
 }
