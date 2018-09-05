@@ -382,6 +382,82 @@
   left: 0px;
   box-shadow:0px -1px 0px #d4d3d3;
 }
+.custom_wrapper{
+  margin: 0px auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.page_main_title{
+  font-size: 34px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  width: 100%;
+  line-height: 1;
+}
+.filtr_box{
+  margin-right: 10px;
+}
+.filtr_box select{
+  background-color: #fff;
+  border:none;
+  padding: 10px 15px;
+  font-size: 14px;
+  min-width: 260px;
+  border-radius: 3px;
+}
+.filtr_btn{
+  padding: 10px 25px;
+  border:none;
+  background-color: #ebc518;
+  color: #303040;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.dna_grid{
+  color: #222;
+}
+.dna_grid .row{
+  border-bottom:1px solid #e1e1e1;
+  padding-top: 7px;
+  padding-bottom:7px;
+  margin: 0px;
+  font-size: 13px;
+}
+
+.dna_head{
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 30px !important;
+  padding-bottom: 10px;
+}
+.filtr_labl{
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.al_right{
+  margin-left: auto;
+}
+.filter_section{
+  border-top:1px solid #ebebeb;
+  border-bottom:1px solid #ebebeb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -moz-align-items: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+.filtr_box .btn-default{
+  border:none;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+.filtr_box .btn-group.open .dropdown-toggle{
+  box-shadow: none;
+  background-color: #fff;
+}
 @media (max-width: 1365px) {
     
 }
