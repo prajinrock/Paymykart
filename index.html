@@ -10,6 +10,8 @@
 <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" href="css/Google_MDL/material.min.css">
+<link rel="stylesheet" href="css/Google_MDL/getmdl-select.min.css">
+<link rel="stylesheet" href="css/Google_MDL/mdl_Icons.css" >
 <link rel="stylesheet" href="css/pmk_style.css">
 
 <script src="css/Google_MDL/material.min.js"></script>
@@ -24,7 +26,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand flexBox al_cnt" href="#"><img src="images/logo.png"></a>
+          <a class="navbar-brand flexBox al_cnt" href="index.html"><img src="images/logo.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right nav_rht">
@@ -33,15 +35,15 @@
               <ul class="dropdown-menu">
                 <li><a>Available Balance <span>&#8377;500</span></a></li>
                 <li><a>Current Balance <span>&#8377;500</span></a></li>
-                <li><a href="#">Transfer to Bank</a></li>
-                <li><a href="#">Edit Bank Details</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#trans_bank">Transfer to Bank</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#redeem">Edit Bank Details</a></li>
               </ul>
             </li>
             <li><a id="login_btn" class="link_tag">Sign In / Up</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">History</a></li>
+                <li><a href="History.html">History</a></li>
                 <li><a href="#">Log Out</a></li>
               </ul>
             </li>
@@ -315,7 +317,7 @@
 				</div>
 		    </div>
 		    <div id="pmk_menu_5" class="tab-pane fade">
-		      <h5>Service Coming Soon</h5> 	
+		      <h5><img src="images/No_Service.gif"> Service Coming Soon</h5> 	
 		      <!--<div class="lower_tab">
 				  <ul class="nav nav-pills">
 				    <li class="active"><a data-toggle="pill" href="#pmk_hotel_1">Hotel</a></li>
@@ -336,7 +338,7 @@
 				</div>-->
 		    </div>
 		    <div id="pmk_menu_6" class="tab-pane fade">
-		      <h5>Service Coming Soon</h5>
+		      <h5><img src="images/No_Service.gif"> Service Coming Soon</h5>
 		      <!--<div class="lower_tab">
 				  <ul class="nav nav-pills">
 				    <li class="active"><a data-toggle="pill" href="#pmk_holiday_1">Holiday</a></li>
@@ -357,7 +359,7 @@
 				</div>-->
 		    </div>
 		    <div id="pmk_menu_7" class="tab-pane fade">
-		      <h5>Service Coming Soon</h5>
+		      <h5><img src="images/No_Service.gif"> Service Coming Soon</h5>
 		      <!--<div class="lower_tab">
 				  <ul class="nav nav-pills">
 				    <li class="active"><a data-toggle="pill" href="#pmk_enter_1">Entertainment</a></li>
@@ -378,7 +380,7 @@
 				</div>-->
 		    </div>
 		    <div id="pmk_menu_8" class="tab-pane fade">
-		      <h5>Service Coming Soon</h5>
+		      <h5><img src="images/No_Service.gif"> Service Coming Soon</h5>
 		      <!--<div class="lower_tab">
 				  <ul class="nav nav-pills">
 				    <li class="active"><a data-toggle="pill" href="#pmk_insur_1">Insurance</a></li>
@@ -399,7 +401,7 @@
 				</div>-->
 		    </div>
 		    <div id="pmk_menu_9" class="tab-pane fade">
-		      <h5>Service Coming Soon</h5>
+		      <h5><img src="images/No_Service.gif"> Service Coming Soon</h5>
 		      <!--<div class="lower_tab">
 				  <ul class="nav nav-pills">
 				    <li class="active"><a data-toggle="pill" href="#pmk_loan_1">Loan</a></li>
@@ -420,7 +422,7 @@
 				</div>-->
 		    </div>
 		    <div id="pmk_menu_10" class="tab-pane fade">
-		      <h5>Service Coming Soon</h5>
+		      <h5><img src="images/No_Service.gif"> Service Coming Soon</h5>
 		      <!--<div class="lower_tab">
 				  <ul class="nav nav-pills">
 				    <li class="active"><a data-toggle="pill" href="#pmk_bank_1">Bank</a></li>
@@ -445,7 +447,13 @@
     </div>
   </div> 
   <div class="contct_footer">
-  	<a href="#">About Us</a> | <a href="#">Contact Us</a>
+  	<a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a>
+  	<div class="social_links">Follow Us: 
+	  	<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+	  	<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+	  	<a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+	  	<a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+  	</div>
   </div>
   <div class="footer_pmk">
   	<div class="footer_out flexBox al_cnt">
@@ -560,7 +568,7 @@
 
 
 
-<div class="modal fade" id="plans_pop" role="dialog">
+<div class="modal fade pmk_modal" id="plans_pop" role="dialog">
     <div class="modal-dialog modal-lg">
     
       <!-- Modal content-->
@@ -598,6 +606,109 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="modal fade pmk_modal" id="trans_bank" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h5 class="modal-title">Add Your Bank Details</h5>
+        </div>
+        <div class="modal-body">
+          <div class="container-fliud">
+          	<div class="row">
+				<div class="col-sm-4">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="sample3">
+						<label class="mdl-textfield__label" for="sample3">Name on the Bank</label>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="mdl-textfield mdl-js-textfield getmdl-select">
+				        <input type="text" value="" class="mdl-textfield__input" id="bankName" readonly>
+				        <input type="hidden" value="" name="bankName">
+				        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+				        <label for="bankName" class="mdl-textfield__label">Select Bank</label>
+				        <ul for="bankName" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+				            <li class="mdl-menu__item" data-val="ICICI">ICICI</li>
+				            <li class="mdl-menu__item" data-val="Federal Bank">Federal Bank</li>
+				            <li class="mdl-menu__item" data-val="SBI">SBI</li>
+				        </ul>
+				    </div>
+				</div>
+				<div class="col-sm-4">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="sample3">
+						<label class="mdl-textfield__label" for="sample3">IFSC Code</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="sample3">
+						<label class="mdl-textfield__label" for="sample3">Account Number</label>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="password" id="sample3">
+						<label class="mdl-textfield__label" for="sample3">Confirm Account Number</label>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					
+				</div>
+			</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="modal fade pmk_modal" id="redeem" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h5 class="modal-title">Redeem Rewards</h5>
+        </div>
+        <div class="modal-body">
+          <div class="container-fliud">
+          	<div class="row">
+				<div class="col-sm-6">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="sample3" placeholder="5000" disabled="">
+						<label class="mdl-textfield__label" for="sample3">Redeemable Amount</label>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="sample3" placeholder="5000">
+						<label class="mdl-textfield__label" for="sample3">Desired Amount</label>
+					</div>
+				</div>
+			</div>
+			
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
         </div>
       </div>
       

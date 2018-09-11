@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand flexBox al_cnt" href="#"><img src="images/logo.png"></a>
+          <a class="navbar-brand flexBox al_cnt" href="index.html"><img src="images/logo.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right nav_rht">
@@ -37,17 +37,15 @@
               <ul class="dropdown-menu">
                 <li><a>Available Balance <span>&#8377;500</span></a></li>
                 <li><a>Current Balance <span>&#8377;500</span></a></li>
-                <li><a href="#">Transfer to Bank</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#trans_bank">Transfer to Bank</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#redeem">Edit Bank Details</a></li>
               </ul>
             </li>
-            <li><a class="link_tag">About</a></li>
-            <li><a class="link_tag">Contact</a></li>
-            <li><a id="login_btn" class="link_tag">Sign In / Sign Up</a></li>
+            <li><a id="login_btn" class="link_tag">Sign In / Up</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">History</a></li>
-                <li><a href="#">Edit Profile</a></li>
+                <li><a href="History.html">History</a></li>
                 <li><a href="#">Log Out</a></li>
               </ul>
             </li>
@@ -86,6 +84,17 @@
         			    <option value="Bonus">Bonus</option>
         			    <option value="Royalty">Royalty</option>
         			</select>
+          </div>
+          <div class="filtr_box">
+            <div class="filtr_labl">Status</div>
+            <div>
+              <select>
+                <option>All</option>
+                <option>Paid</option>
+                <option>Pending</option>
+                <option>Cancelled</option>
+              </select>
+            </div>
           </div>
           <div class="al_right"><button class="filtr_btn">Apply</button></div>
         </div>
@@ -184,136 +193,39 @@
         </div>
       </div>
     </div>
-  <div class="footer_pmk">
-  	<div class="footer_out flexBox al_cnt">
-  		<div>
-  			<a href="">Terms of use</a>
-  			<a href="">Disclaimer</a>
-  			<a href="">Grievance</a>
-  			<a href="">Privacy policy</a>
-  			<a href="">Cookie policy</a>
-  		</div>
-  		<div>
-  			<a>© 2018 Paymykart. All rights reserved</a>
-  		</div>
-  		<div>
- 			<a href="#">Passionately created by <span>ZCODEZ</span></a>
-  		</div>
-  	</div>
+  <div class="contct_footer">
+    <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a>
+    <div class="social_links">Follow Us: 
+      <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+    </div>
   </div>
+  <div class="footer_pmk">
+    <div class="footer_out flexBox al_cnt">
+      <div>
+        <a href="">Terms of use</a>
+        <a href="">Disclaimer</a>
+        <a href="">Privacy policy</a>
+        <a href="">Cookie policy</a>
+      </div>
+      <div>
+        <a>© 2018 Paymykart. All rights reserved</a>
+      </div>
+      <div>
+      <a style="border-right: none;">Passionately created by</a>
+      <a href="#" class="code_logo"></a>
+      </div>
+    </div>
+  </div>
+  <div class="bottom_graphix_2"><img src="images/grey_bg.jpg"></div>
   
 
 
 
 
-  <!-- Pop Ups-->
-  <div class="hidn" id="pop_login">
- <div class="pop_bgd flexBox">
-  <div class="forClick"></div>
-  <div class="login_box flexBox">
-    <div class="login_container">
-      <div class="login_title">Log In</div>
-      <div class="login_field">
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" id="sample3">
-          <label class="mdl-textfield__label" for="sample3">Username</label>
-        </div>
-        <i class="fa fa-user"></i>
-      </div>
-      <div class="login_field">
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="password" id="sample3">
-          <label class="mdl-textfield__label" for="sample3">Password</label>
-        </div>
-        <i class="fa fa-lock"></i>
-      </div>
-      <div class="log_reminder">
-        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-          <span class="mdl-checkbox__label">Remember me on this device</span>
-          <a href="#">Forgot Password?</a>
-        </label>
-      </div>
-      <div class="log_btn_holder">
-        <button>Login</button>
-      </div>
-    </div>
-    <div class="reg_board flexBox">
-      If you are a new user or like to join
-      <div class="reg_btn_holder">
-        <button>Register</button>
-      </div> 
-    </div>
-  </div>
-</div> 
-</div>
-<div class="hidn" id="pop_register">
-  <div class="pop_bgd flexBox">
-    <div class="forClick"></div>
-    <div class="login_box flexBox">
-      <div class="login_container">
-        <div class="login_title">Register</div>
-        <div class="login_field">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">First Name</label>
-          </div>
-        </div>
-        <div class="login_field">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">Last Name</label>
-          </div>
-        </div>
-        <div class="login_field">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">Email/Mobile Number</label>
-          </div>
-        </div>
-        <div class="login_field">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="password" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">Password</label>
-          </div>
-        </div>
-        <div class="login_field">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="password" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">Confirm Password</label>
-          </div>
-        </div>
-        <div class="log_btn_holder">
-          <button>Submit</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-<div class="pop_closer" id="popClose">
-  <img src="images/close_button.png">
-</div>
-
-<div class="modal fade" id="myModal" role="dialog"><!--POP UP-->
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Sample Notification</h4>
-        </div>
-        <div class="modal-body">
-          <p>Email Verification sent successfully!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+ 
   
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -321,18 +233,7 @@
 
 <script>
 $(document).ready(function(){
-    $("#login_btn").click(function(){
-        $("#pop_login, #popClose").show();
-    });
-    $("#reg_btn").click(function(){
-        $("#pop_register, #popClose").show();
-    });
-    $(".forClick, #popClose").click(function(){
-        $("#pop_register, #pop_login, #popClose").hide();
-    });
-
     $('#multi-select-demo').multiselect();
-    
 });
 </script>
 </body>
