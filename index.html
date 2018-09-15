@@ -34,7 +34,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/icon_purse.png" width="22">&nbsp;&nbsp;  &#8377; 12450.00<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a>Available Balance <span>&#8377;500</span></a></li>
-                <li><a>Current Balance <span>&#8377;500</span></a></li>
+                <li><a data-toggle="modal" data-target="#add_bank">Current Balance <span>&#8377;500</span></a></li>
                 <li><a href="#" data-toggle="modal" data-target="#trans_bank">Transfer to Bank</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#redeem">Edit Bank Details</a></li>
               </ul>
@@ -446,28 +446,28 @@
 		</div>
     </div>
   </div> 
-  <div class="contct_footer">
-  	<a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a>
-  	<div class="social_links">Follow Us: 
-	  	<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-	  	<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-	  	<a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-	  	<a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-  	</div>
-  </div>
+  
   <div class="footer_pmk">
   	<div class="footer_out flexBox al_cnt">
   		<div>
-  			<a href="">Terms of use</a>
+  			<a href="">TOU</a>
   			<a href="">Disclaimer</a>
-  			<a href="">Privacy policy</a>
-  			<a href="">Cookie policy</a>
+  			<a href="">Privacy</a>
+  			<a href="">Cookie</a>
   		</div>
   		<div>
-  			<a>© 2018 Paymykart. All rights reserved</a>
+  			<a href="">Contact</a>
+  			<a href="">About</a>
+  			<a href="#" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  			<a href="#" title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+  			<a href="#" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+		  	<a href="#" title="Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+		  	<a href="#" title="Youtube"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
   		</div>
   		<div>
- 			<a style="border-right: none;">Passionately created by</a>
+  			<a>© 2018 Paymykart.</a>
+  		</div>
+  		<div>
  			<a href="#" class="code_logo"></a>
   		</div>
   	</div>
@@ -715,6 +715,74 @@
     </div>
   </div>
 
+
+  <div class="modal fade pmk_modal" id="add_bank" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h5 class="modal-title">Add Your Bank Details</h5>
+        </div>
+        <div class="modal-body">
+          <div class="container-fliud">
+          	<div class="row">
+				<div class="col-sm-4">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="sample3">
+						<label class="mdl-textfield__label" for="sample3">Name on the Bank</label>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="mdl-textfield mdl-js-textfield getmdl-select">
+				        <input type="text" value="" class="mdl-textfield__input" id="bankName" readonly>
+				        <input type="hidden" value="" name="bankName">
+				        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+				        <label for="bankName" class="mdl-textfield__label">Select Bank</label>
+				        <ul for="bankName" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+				            <li class="mdl-menu__item" data-val="ICICI">ICICI</li>
+				            <li class="mdl-menu__item" data-val="Federal Bank">Federal Bank</li>
+				            <li class="mdl-menu__item" data-val="SBI">SBI</li>
+				        </ul>
+				    </div>
+				</div>
+				<div class="col-sm-4">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="sample3">
+						<label class="mdl-textfield__label" for="sample3">IFSC Code</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="sample3">
+						<label class="mdl-textfield__label" for="sample3">Account Number</label>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="password" id="sample3">
+						<label class="mdl-textfield__label" for="sample3">Confirm Account Number</label>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					
+				</div>
+			</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success pull-left" data-dismiss="modal">Add Another Account</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
   
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -729,6 +797,13 @@ $(document).ready(function(){
     $(".forClick, #popClose").click(function(){
         $("#pop_register, #pop_login, #popClose").hide();
     });
+    $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $(".navbar-default").css("box-shadow","0px 0px 3px rgba(0,0,0,.2)");
+    } else {
+      $(".navbar-default").css("box-shadow","none");
+    }
+  });
 });
 </script>
 </body>

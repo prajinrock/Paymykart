@@ -61,9 +61,12 @@
             <div class="filtr_labl">Date</div>
             <div>
               <select>
-                <option>Last 30 Days</option>
-                <option>Last 7 Days</option>
-                <option>Last Day</option>
+                <option>Last Week</option>
+                <option>Last Month</option>
+                <option>Quarterly</option>
+                <option>Half-Yearly</option>
+                <option>Yearly</option>
+                <option>Cutom Date</option>
               </select>
             </div>
           </div>
@@ -71,6 +74,16 @@
             <div class="filtr_labl">Service</div>
             <div>
               <select>
+                <option>Shopping</option>
+                <option>Recharge</option>
+                <option>Utilities</option>
+                <option>Travel</option>
+                <option>Hotel</option>
+                <option>Holidays</option>
+                <option>Entertainment</option>
+                <option>Insurance</option>
+                <option>Loans</option>
+                <option>Banking</option>
                 <option>Re-sale</option>
               </select>
             </div>
@@ -193,28 +206,28 @@
         </div>
       </div>
     </div>
-  <div class="contct_footer">
-    <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a>
-    <div class="social_links">Follow Us: 
-      <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-    </div>
-  </div>
+  
   <div class="footer_pmk">
     <div class="footer_out flexBox al_cnt">
       <div>
-        <a href="">Terms of use</a>
+        <a href="">TOU</a>
         <a href="">Disclaimer</a>
-        <a href="">Privacy policy</a>
-        <a href="">Cookie policy</a>
+        <a href="">Privacy</a>
+        <a href="">Cookie</a>
       </div>
       <div>
-        <a>© 2018 Paymykart. All rights reserved</a>
+        <a href="">Contact</a>
+        <a href="">About</a>
+        <a href="#" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="#" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="#" title="Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="#" title="Youtube"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
       </div>
       <div>
-      <a style="border-right: none;">Passionately created by</a>
+        <a>© 2018 Paymykart.</a>
+      </div>
+      <div>
       <a href="#" class="code_logo"></a>
       </div>
     </div>
@@ -233,8 +246,17 @@
 
 <script>
 $(document).ready(function(){
-    $('#multi-select-demo').multiselect();
-});
+  $('#multi-select-demo').multiselect();
+  });
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $(".navbar-default").css("box-shadow","0px 0px 3px rgba(0,0,0,.2)");
+    } else {
+      $(".navbar-default").css("box-shadow","none");
+    }
+  });
 </script>
+
+
 </body>
 </html>
