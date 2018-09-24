@@ -2,6 +2,7 @@
   padding:0px;
   margin: 0px;
   font-family: 'Roboto', sans-serif;
+  background-color: #f1f1f1;
 }
 *{
   box-sizing: border-box;
@@ -24,6 +25,7 @@
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
+  background-color: #f1f1f1;
 }
 .flexBox{
   display: flex;
@@ -810,9 +812,6 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
   -ms-justify-content: space-between;
   -moz-justify-content: space-between;
   border-bottom: 1px solid #333;
-  position: absolute;
-  z-index: 6;
-  bottom: -600px;
   width: 100%;
   min-height: 600px;
   background-image: url(../images/blk_bg.jpg);
@@ -853,4 +852,15 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
 }
 .tabTop1 .pmk_title{
   display: none;
+}
+.listing_box{
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  position: absolute;
+  transition: all .3s;
+  top: 70%;
+}
+.foot_up{
+  bottom: 0px;
 }

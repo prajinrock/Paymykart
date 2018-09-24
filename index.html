@@ -447,69 +447,97 @@
 		</div>
     </div>
   </div> 
+  <div class="listing_box">
+  	<div class="itemLister">
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  		sdfbkjsdf<br/>
+  	</div>
+  	<div class="foot_link_holder flexBox">
+		  <div>
+		    <div class="foot_header">Recharge</div>
+		    <div class="foot_links">
+		      <a href="">Mobile</a>
+		      <a href="">DTH</a>
+		      <a href="">Data Card</a>
+		    </div>
+		  </div>
+		  <div>
+		    <div class="foot_header">Utilities</div>
+		    <div class="foot_links">
+		      <a href="">Water</a>
+		      <a href="">Gas</a>
+		      <a href="">Electricity</a>
+		      <a href="">Landline</a>
+		    </div>
+		  </div>
+		  <div>
+		    <div class="foot_header">Shopping</div>
+		    <div class="foot_links">
+		      <a href="">Comparison</a>
+		      <a href="">Cashback</a>
+		    </div>
+		  </div>
+		  <div>
+		    <div class="foot_header">Travel</div>
+		    <div class="foot_links">
+		      <a href="">Flight Booking</a>
+		      <a href="">Train Booking</a>
+		      <a href="">Bus Booking</a>
+		      <a href="">Car Booking</a>
+		      <a href="">Hotel Booking</a>
+		    </div>
+		  </div>
+		  <div>
+		    <div class="foot_header">Holidays</div>
+		    <div class="foot_links">
+		      <a href="">Domestic</a>
+		      <a href="">International</a>
+		      <a href="">Site Seeing</a>
+		      <a href="">Guide</a>
+		    </div>
+		  </div>
+		  <div>
+		    <div class="foot_header">Entertainment</div>
+		    <div class="foot_links">
+		      <a href="">Movie Tickets</a>
+		      <a href="">Events</a>
+		    </div>
+			</div>
+			<div>
+		    <div class="foot_header">Others</div>
+		    <div class="foot_links">
+		      <a href="">EMI</a>
+		      <a href="">General Insurance</a>
+		      <a href="">Health Insurance</a>
+		      <a href="">Life Insurance</a>
+		      <a href="">Money Remittance</a>
+		    </div>
+		  </div>
+	</div>
+  </div>
 
-<div class="foot_link_holder flexBox">
-	  <div>
-	    <div class="foot_header">Recharge</div>
-	    <div class="foot_links">
-	      <a href="">Mobile</a>
-	      <a href="">DTH</a>
-	      <a href="">Data Card</a>
-	    </div>
-	  </div>
-	  <div>
-	    <div class="foot_header">Utilities</div>
-	    <div class="foot_links">
-	      <a href="">Water</a>
-	      <a href="">Gas</a>
-	      <a href="">Electricity</a>
-	      <a href="">Landline</a>
-	    </div>
-	  </div>
-	  <div>
-	    <div class="foot_header">Shopping</div>
-	    <div class="foot_links">
-	      <a href="">Comparison</a>
-	      <a href="">Cashback</a>
-	    </div>
-	  </div>
-	  <div>
-	    <div class="foot_header">Travel</div>
-	    <div class="foot_links">
-	      <a href="">Flight Booking</a>
-	      <a href="">Train Booking</a>
-	      <a href="">Bus Booking</a>
-	      <a href="">Car Booking</a>
-	      <a href="">Hotel Booking</a>
-	    </div>
-	  </div>
-	  <div>
-	    <div class="foot_header">Holidays</div>
-	    <div class="foot_links">
-	      <a href="">Domestic</a>
-	      <a href="">International</a>
-	      <a href="">Site Seeing</a>
-	      <a href="">Guide</a>
-	    </div>
-	  </div>
-	  <div>
-	    <div class="foot_header">Entertainment</div>
-	    <div class="foot_links">
-	      <a href="">Movie Tickets</a>
-	      <a href="">Events</a>
-	    </div>
-		</div>
-		<div>
-	    <div class="foot_header">Others</div>
-	    <div class="foot_links">
-	      <a href="">EMI</a>
-	      <a href="">General Insurance</a>
-	      <a href="">Health Insurance</a>
-	      <a href="">Life Insurance</a>
-	      <a href="">Money Remittance</a>
-	    </div>
-	  </div>
-</div>
   <div class="footer_pmk">
   	<div class="footer_out flexBox al_cnt">
   		<div>
@@ -870,12 +898,19 @@ $(document).ready(function(){
   });
 });
 $(window).scroll(function() {
-    if ($(document).scrollTop() > 150) {
-      $(".pmk_controller").addClass('tabTop1');
+    //if ($(document).scrollTop() > 20) {
+      //$(".pmk_controller").addClass('tabTop1');
+    //} else {
+      //$(".pmk_controller").removeClass('tabTop1');
+    //}
+    if ($(document).height() - ($(document).scrollTop() + $(window).height()) < 20) {
+      $(".foot_link_holder").addClass('foot_up');
     } else {
-      $(".pmk_controller").removeClass('tabTop1');
+      $(".foot_link_holder").removeClass('foot_up');
     }
   });
+$('.itemLister').css('min-height',($(window).height()*30)/100 + 'px');
+
 </script>
 </body>
 </html>
