@@ -33,16 +33,16 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/icon_purse.png" width="22">&nbsp;&nbsp;  &#8377; 12450.00<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a>Available Balance <span>&#8377;500</span></a></li>
-                <li><a data-toggle="modal" data-target="#add_bank">Current Balance <span>&#8377;500</span></a></li>
-                <li><a href="#" data-toggle="modal" data-target="#trans_bank">Transfer to Bank</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#redeem">Edit Bank Details</a></li>
+                <li><a data-toggle="modal" data-target="#redeem">Redeem Balance <span>&#8377;500</span></a></li>
+                <li><a href="History.html">Current Balance <span>&#8377;500</span></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#trans_bank">Add to eWallet</a></li>
               </ul>
             </li>
             <li><a id="login_btn" class="link_tag">Sign In / Up</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe<span class="caret"></span></a>
               <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#add_bank">Add/Edit Bank Details</a></li>
                 <li><a href="History.html">History</a></li>
                 <li><a href="#">Log Out</a></li>
               </ul>
@@ -82,6 +82,7 @@
 				      	<div class="wid75"><input type="text" name="" class="shop_text" placeholder="Search"></div>
 				      	<div class="search_btn flexBox wid25"><button>Search</button></div>
 				      </div>
+				      
 				    </div>
 				    <div id="pmk_shop_2" class="tab-pane fade">
 				      <div  class="outer_wrap flexBox">
@@ -446,7 +447,69 @@
 		</div>
     </div>
   </div> 
-  
+
+<div class="foot_link_holder flexBox">
+	  <div>
+	    <div class="foot_header">Recharge</div>
+	    <div class="foot_links">
+	      <a href="">Mobile</a>
+	      <a href="">DTH</a>
+	      <a href="">Data Card</a>
+	    </div>
+	  </div>
+	  <div>
+	    <div class="foot_header">Utilities</div>
+	    <div class="foot_links">
+	      <a href="">Water</a>
+	      <a href="">Gas</a>
+	      <a href="">Electricity</a>
+	      <a href="">Landline</a>
+	    </div>
+	  </div>
+	  <div>
+	    <div class="foot_header">Shopping</div>
+	    <div class="foot_links">
+	      <a href="">Comparison</a>
+	      <a href="">Cashback</a>
+	    </div>
+	  </div>
+	  <div>
+	    <div class="foot_header">Travel</div>
+	    <div class="foot_links">
+	      <a href="">Flight Booking</a>
+	      <a href="">Train Booking</a>
+	      <a href="">Bus Booking</a>
+	      <a href="">Car Booking</a>
+	      <a href="">Hotel Booking</a>
+	    </div>
+	  </div>
+	  <div>
+	    <div class="foot_header">Holidays</div>
+	    <div class="foot_links">
+	      <a href="">Domestic</a>
+	      <a href="">International</a>
+	      <a href="">Site Seeing</a>
+	      <a href="">Guide</a>
+	    </div>
+	  </div>
+	  <div>
+	    <div class="foot_header">Entertainment</div>
+	    <div class="foot_links">
+	      <a href="">Movie Tickets</a>
+	      <a href="">Events</a>
+	    </div>
+		</div>
+		<div>
+	    <div class="foot_header">Others</div>
+	    <div class="foot_links">
+	      <a href="">EMI</a>
+	      <a href="">General Insurance</a>
+	      <a href="">Health Insurance</a>
+	      <a href="">Life Insurance</a>
+	      <a href="">Money Remittance</a>
+	    </div>
+	  </div>
+</div>
   <div class="footer_pmk">
   	<div class="footer_out flexBox al_cnt">
   		<div>
@@ -473,6 +536,7 @@
   	</div>
   </div>
   <div class="bottom_graphix"><img src="images/grey_bg.jpg"></div>
+
 
 
 
@@ -805,6 +869,13 @@ $(document).ready(function(){
     }
   });
 });
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 150) {
+      $(".pmk_controller").addClass('tabTop1');
+    } else {
+      $(".pmk_controller").removeClass('tabTop1');
+    }
+  });
 </script>
 </body>
 </html>
