@@ -129,7 +129,7 @@ body{
   padding:5px 20px;
 }
 .outer_wrap .wid50{
-  max-width: 420px;
+  max-width: 280px;
 }
 .wid50:nth-last-child(1){
   margin-right: auto;
@@ -207,10 +207,10 @@ body{
   -moz-justify-content: space-between;
 }
 .footer_out div a{
-  color: #666;
+  color: #777;
   display: inline-block;
   padding: 4px 10px;
-  border-right:1px solid #ccc;
+  border-right:1px solid #222;
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -408,19 +408,16 @@ body{
   margin-right: 0px;
 }
 .footer_pmk{
-  background-color: #dedede;
+  background-color: rgba(0,0,0,.2);
   height: 40px;
   width: 100%;
-  position: fixed;
   z-index: 22;
-  bottom: 0px;
-  left: 0px;
-  box-shadow:0px -1px 0px #d4d3d3;
+  box-shadow:0px -1px 0px rgba(0,0,0,.2);
+  margin-top: auto;
 }
 .custom_wrapper{
   margin: 0px auto;
   margin-top: 80px;
-  margin-bottom: 40px;
   position: relative;
   z-index:2;
   font-family: 'Roboto', sans-serif;
@@ -811,12 +808,11 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
 }
 .foot_link_holder{
   padding-top: 65px;
-  padding-bottom:80px;
   background-color: #222;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -moz-justify-content: space-between;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
   border-bottom: 1px solid #333;
   width: 100%;
   min-height: 600px;
@@ -825,7 +821,14 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
   background-size: 100%;
   background-position: bottom;
   background-attachment: fixed;
-  justify-content: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
 }
 
 .foot_header{
