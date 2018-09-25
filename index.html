@@ -449,32 +449,10 @@
   </div> 
   <div class="listing_box">
   	<div class="itemLister">
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
-  		sdfbkjsdf<br/>
+  		
   	</div>
   	<div class="foot_link_holder flexBox">
+  		<div class="footContainer flexBox">
 		  <div>
 		    <div class="foot_header">Recharge</div>
 		    <div class="foot_links">
@@ -536,7 +514,9 @@
 		    </div>
 		  </div>
 	</div>
-  </div>
+</div>
+
+  </div><!--second section closing-->
 
   <div class="footer_pmk">
   	<div class="footer_out flexBox al_cnt">
@@ -898,16 +878,12 @@ $(document).ready(function(){
   });
 });
 $(window).scroll(function() {
-    //if ($(document).scrollTop() > 20) {
-      //$(".pmk_controller").addClass('tabTop1');
-    //} else {
-      //$(".pmk_controller").removeClass('tabTop1');
-    //}
-    if ($(document).height() - ($(document).scrollTop() + $(window).height()) < 20) {
-      $(".foot_link_holder").addClass('foot_up');
+    if ($(document).scrollTop() > 100) {
+      $(".pmk_controller").addClass('tabTop1');
     } else {
-      $(".foot_link_holder").removeClass('foot_up');
+      $(".pmk_controller").removeClass('tabTop1');
     }
+    
   });
 $('.itemLister').css('min-height',($(window).height()*30)/100 + 'px');
 

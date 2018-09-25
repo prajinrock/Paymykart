@@ -1,4 +1,4 @@
-.body{
+body{
   padding:0px;
   margin: 0px;
   font-family: 'Roboto', sans-serif;
@@ -38,7 +38,7 @@
 }
 .bottom_graphix{
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
@@ -109,6 +109,9 @@
   max-height: 400px;
   overflow-y: auto;
 }
+.rech_radio{
+  overflow-y: visible !important;
+}
 .outer_wrap{
   width: 100%;
   flex-wrap: wrap;
@@ -124,6 +127,9 @@
   -ms-align-items: center;
   box-sizing: border-box;
   padding:5px 20px;
+}
+.outer_wrap .wid50{
+  max-width: 420px;
 }
 .wid50:nth-last-child(1){
   margin-right: auto;
@@ -818,17 +824,10 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
+  background-attachment: fixed;
+  justify-content: center;
 }
-.foot_link_holder > div:nth-child(1){
-  padding-left: 60px;
-}
-.foot_link_holder > div:nth-last-child(1){
-  padding-right: 60px;
-}
-.foot_link_holder > div{
-  padding-left: 30px;
-  padding-right: 30px;
-}
+
 .foot_header{
   color: #edc518;
   font-size: 16px;
@@ -863,4 +862,12 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
 }
 .foot_up{
   bottom: 0px;
+}
+.footContainer{
+  max-width: 1140px;
+  width: 80%;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
 }
