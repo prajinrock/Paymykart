@@ -856,7 +856,16 @@
     </div>
   </div>
 
-  
+  <div class="preLodr flexBox" id="prelodr"><!--PRELOADER-->
+   <div class="loadOuter">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+ </div><!--PRELOADER-->
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
@@ -888,7 +897,9 @@ $(window).scroll(function() {
     
   });
 $('.itemLister').css('min-height',($(window).height()*30)/100 + 'px'); 
-
+$(window).load(function(){
+  $("#prelodr").hide();
+});
 </script>
 </body>
 </html>
