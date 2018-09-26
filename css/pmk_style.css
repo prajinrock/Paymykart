@@ -815,7 +815,7 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
   -moz-justify-content: center;
   border-bottom: 1px solid #333;
   width: 100%;
-  min-height: 600px;
+  min-height: 400px;
   background-image: url(../images/blk_bg.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -873,6 +873,24 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   -moz-justify-content: space-between;
+}
+.short_footer{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(0,0,0,.2);
+  padding: 10px 0px;
+}
+.short_footer > a{
+  border-right:1px solid #333;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #777;
+  font-size: 13px;
+
+}
+.short_footer > a:nth-last-child(1){
+  border-right:none;
 }
 /*Preloader Style*/
 .preLodr{
@@ -946,7 +964,7 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
     left: 12px;
     animation: animChild5 2.5s linear infinite;
   }
-    @keyframes animChild1{
+      @keyframes animChild1{
       0%{left:68px; width: 0px;}
       20%{left:0px; width: 68px;}
     }
