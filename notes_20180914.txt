@@ -26,5 +26,3 @@ LinkedIn
 
 
 Add bank
-
-abcd
