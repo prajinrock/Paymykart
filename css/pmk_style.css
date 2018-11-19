@@ -128,8 +128,11 @@ body{
   box-sizing: border-box;
   padding:5px 20px;
 }
-.outer_wrap .wid50{
+.tabTop1 .outer_wrap .wid50{
   max-width: 280px;
+}
+.tabTop1 .outer_wrap .auto_rht{
+  margin-left: 0px;
 }
 .wid50:nth-last-child(1){
   margin-right: auto;
@@ -345,7 +348,7 @@ body{
   font-size: 12px;
 }
 .log_btn_holder{
-  padding-top: 70px;
+  padding-top: 50px;
   text-align: center;
 }
 .log_btn_holder > button{
@@ -360,8 +363,8 @@ body{
 .reg_board{
   width: 100%;
   background-color: #eee;
-  padding: 40px 0px;
-  margin-top: 60px;
+  padding: 30px 0px;
+  margin-top: 50px;
   font-size: 18px;
   color: #333;
   flex-direction: column;
@@ -529,9 +532,10 @@ body{
   color: #ebc518;
 }
 .code_logo{
-  width: 60px;
-  height: 12px;
+  width: 50px;
+  height: 10px;
   background-image: url(../images/z_logo_small.png);
+  background-size: 100%;
 }
 .code_logo:hover{
   background-position: bottom;
@@ -588,34 +592,6 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
 .social_links i.fa-youtube-square:hover{
   color: #e32115;
 }
-@media (max-width: 1365px) {
-
-}
-@media (max-width: 767px) {
-    .nav_outer .navbar-collapse{
-      background-color: #f1f1f1;
-      width: 100%;
-      border-bottom: 1px solid #ccc;
-    }
-    .pmk_title{
-      line-height: 2;
-      font-size: 18px;
-    }
-    .wid50{
-      width: 100%;
-    }
-    .rech_radio{
-      margin-top: 10px;
-    }
-    .login_box{
-      width: 100%;
-    }
-    .forClick{
-      display: none;
-    }
-}
-
-
 .contact_main_title{
   font-size: 34px;
   font-family: 'Open Sans', sans-serif;
@@ -843,6 +819,7 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
   display: block;
   padding-top: 20px;
   transition: all .3s;
+  font-weight: 400;
 }
 .foot_links a:hover{
   color: #eac417;
@@ -988,4 +965,54 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
       80%{left:56px; width: 0px;}
       100%{left:12px; width: 44px;}
     }
+    .mdl-textfield__label, .mdl-radio__label{
+      font-size: 14px;
+    }
 /*Preloader Style Ends*/
+.invlidField{
+  font-size: 12px;
+  color: #e74c3c;
+  font-weight: 600;
+  transition: all .3s;
+}
+@media only screen and (max-width: 768px) {
+    .nav_outer .navbar-collapse{
+      background-color: #f1f1f1;
+      width: 100%;
+      /*border-bottom: 1px solid #ccc;*/
+    }
+    .pmk_title{
+      line-height: 2;
+      font-size: 18px;
+    }
+    .outer_wrap .wid50{
+      width: 100%;
+    }
+    .rech_radio{
+      margin-top: 10px;
+    }
+    .login_box{
+      width: 100%;
+    }
+    .forClick{
+      display: none;
+    }
+    .footContainer{
+      flex-direction: column;
+      width: 90%;
+    }
+    .foot_links a{
+      display: inline-block;
+      padding: 5px 10px 20px 0px;
+    }
+    .footer_out{
+      flex-direction: column;
+    }
+    .footer_pmk{
+      height: auto;
+      padding:20px 0px;
+    }
+    .rech_btn_holder{
+      width: 100%;
+    }
+}
