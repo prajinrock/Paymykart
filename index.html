@@ -80,7 +80,7 @@
 				    <div id="pmk_shop_1" class="tab-pane fade in active">
 				      <div  class="outer_wrap flexBox">
 				      	<div class="wid75"><input type="text" name="" class="shop_text" placeholder="Search"></div>
-				      	<div class="search_btn flexBox wid25"><button>Search</button></div>
+				      	<div class="search_btn flexBox wid25"><button id="demo-show-toast">Search</button></div>
 				      </div>
 				      
 				    </div>
@@ -583,9 +583,13 @@
       <div class="log_btn_holder">
         <button>Login</button>
       </div>
-      <div class="externalLogin">
-      	
+      <div class="log_seperatr">
+      	<label>or</label>
+      	<span class="log_hover_line"></span>
       </div>
+      <div class="extLogin">
+      	<button class="fb_log1"></button>
+      	<button class="google_log1"></button>
     </div>
 
     <div class="reg_board flexBox">
@@ -861,7 +865,25 @@
       
     </div>
   </div>
-
+<!-- Toaster Snackbar -->
+<div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
+<script>
+(function() {
+  'use strict';
+  window['counter'] = 0;
+  var snackbarContainer = document.querySelector('#demo-toast-example');
+  var showToastButton = document.querySelector('#demo-show-toast');
+  showToastButton.addEventListener('click', function() {
+    'use strict';
+    var data = {message: 'Example Message # ' + ++counter};
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  });
+}());
+</script>
+<!-- Toaster Snackbar -->
   <div class="preLodr flexBox" id="prelodr"><!--PRELOADER-->
    <div class="loadOuter">
       <span></span>
