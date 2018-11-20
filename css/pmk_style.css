@@ -975,6 +975,9 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
   font-weight: 600;
   transition: all .3s;
 }
+.externalLogin{
+  
+}
 .log_seperatr{
   width: 100%;
   /*background-color: #ccc;*/
