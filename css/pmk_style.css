@@ -1037,6 +1037,21 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
   border:none;
   outline: none;
 }
+.terms_content{
+  padding: 20px 15px;
+  text-align: justify;
+}
+.terms_content ul{
+    padding-left: 18px;
+}
+.alpha_list li{
+  list-style: upper-alpha;
+  padding-bottom: 10px;
+}
+.terms_content h4{
+  color: #ebc518;
+  text-transform: uppercase;
+}
 @media only screen and (max-width: 768px) {
     .nav_outer .navbar-collapse{
       background-color: #f1f1f1;
