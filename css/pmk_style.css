@@ -254,9 +254,11 @@ body{
 }
 .nav_rht li a{
   font-weight: 300;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  color: #000;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  padding: 25px 15px;
 }
 .nav_rht .dropdown-menu>li>a{
   font-size: 13px;
@@ -1052,6 +1054,11 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
   color: #ebc518;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 1366px){
+  .navbar-brand img{
+    margin-top: 10px;
+  }
+}
 @media only screen and (max-width: 768px) {
     .nav_outer .navbar-collapse{
       background-color: #f1f1f1;
@@ -1105,5 +1112,8 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
     }
     .reg_board{
       margin-top: 20px;
+    }
+    .nav_rht li a{
+      padding: 15px 15px;
     }
 }
