@@ -34,7 +34,7 @@ body{
   display: -ms-flex;
 }
 .big_bg{
-  background-color: #f1f1f1;
+  background-color: #fff;
 }
 .bottom_graphix{
   width: 100%;
@@ -194,7 +194,7 @@ body{
   font-weight: 400;
 }
 .navbar-default{
-  background-color: #f1f1f1;
+  background-color: #fff;
   border:none;
 }
 .nav_outer{
@@ -422,7 +422,7 @@ body{
 }
 .custom_wrapper{
   margin: 0px auto;
-  margin-top: 80px;
+  margin-top: 70px;
   position: relative;
   z-index:2;
   font-family: 'Roboto', sans-serif;
@@ -1053,6 +1053,40 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
 .terms_content h4{
   color: #ebc518;
   text-transform: uppercase;
+}
+/*August 2019*/
+.searchSection{
+  width: 100%;
+  height: 100px;
+  background-color: #fbf3de;
+  justify-content: center;
+  align-items: center;
+}
+.searchBox{
+  height: 45px;
+  width: 50%;
+  font-family: 'Poppins', sans-serif;
+}
+.searchBox select{
+  width: 75px;
+  border-radius: 5px 0px 0px 5px;
+  border:none;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+}
+.searchBox input[type="text"]{
+  border: none;
+  border-left: 1px solid #fbf3de;
+  padding-left: 20px;
+  width: calc(100% - 135px);
+}
+.searchBox button{
+  padding: 0px 20px;
+  background-color: #fff;
+  border:none;
+  border-radius: 0px 5px 5px 0px;
+  width: 60px;
 }
 @media only screen and (min-width: 1366px){
   .navbar-brand img{
