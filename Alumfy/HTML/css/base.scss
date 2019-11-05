@@ -1,0 +1,158 @@
+@import "breakpoints";
+@import "variables";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+.backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    background-image: url('../images/background_alumfy.jpg');
+    background-size: 100%;
+}
+
+.topHeader {
+    width: 100%;
+    background-color: #fff;
+    padding: 0px 30px;
+    box-sizing: border-box;
+
+    @include media-breakpoint-up(sm) {
+        height: 77px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 77px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 115px;
+    }
+
+    .brandLogo {
+        img {
+            width: 100%;
+        }
+
+        @include media-breakpoint-up(sm) {
+            width: 150px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 150px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 230px;
+        }
+    }
+
+    @include flex;
+    align-items: center;
+}
+
+.subHeader {
+    width: 100%;
+    background-color: #fff;
+    padding: 0px 30px;
+    @include flex;
+    align-items: center;
+    @include media-breakpoint-up(sm) {
+        height: 130px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 130px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 200px;
+    }
+
+    .loginBox {
+        width: 40%;
+
+        h2 {
+            margin: 0px;
+            padding: 0px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #585858;
+            padding-bottom: 10px;
+
+            span {
+                font-weight: normal;
+            }
+        }
+
+        .formSection {
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .loginText,
+            .loginPass {
+                width: 40%;
+
+                input[type=text],
+                input[type=password] {
+                    width: 100%;
+                    background-color: #fff;
+                    border: 2px solid #e1e1e1;
+                    border-radius: 30px;
+                    box-sizing: border-box;
+                    font-family: 'Poppins', sans-serif;
+                    width: 100%;
+
+                    @include media-breakpoint-up(sm) {
+                    	padding: 8px 12px;
+                    	font-size: 12px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                    	padding: 8px 15px;
+                    	font-size: 12px;
+                    }
+
+                    @include media-breakpoint-up(xl) {
+                    	padding: 10px 20px;
+                    	font-size: 13px;
+                    }
+                }
+            }
+            .logBtn{
+            	background-color: #002379;
+            	border:none;
+            	border-radius: 30px;
+            	color: #fff;
+            	font-family: 'Poppins', sans-serif;
+            	@include media-breakpoint-up(sm) {
+                    	padding: 10px 20px;
+                    	font-size: 12px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                    	padding: 10px 25px;
+                    	font-size: 12px;
+                    }
+
+                    @include media-breakpoint-up(xl) {
+                    	padding: 12px 35px;
+                    	font-size: 13px;
+                    }
+            }
+        }
+    }
+}

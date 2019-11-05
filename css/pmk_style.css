@@ -1088,6 +1088,171 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
   border-radius: 0px 5px 5px 0px;
   width: 60px;
 }
+.contentContainer{
+  width: 100%;
+}
+.contentSideBar{
+  width: 300px;
+  padding: 10px 30px 30px 30px;
+}
+.SearchResults{
+  width: calc(100% - 300px);
+  border-left: 1px solid #ebebeb;
+}
+.contentSideBar h2{
+  margin:0px;
+  padding: 0px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+ul, .newUL {
+  list-style-type: none;
+}
+
+.newUL {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.caretX {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caretX::before {
+  content: ">";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+.caretX-down{
+  font-weight: bold;
+}
+.caretX-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.activeX {
+  display: block;
+}
+.ProdRating .fa-star{
+  color: gray;
+}
+.ProdRating .checked{
+  color: orange;
+}
+.ProdRating div{
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+.prodListingBox{
+  border-bottom:  1px solid #ebebeb;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.prodThumbBox{
+  margin-right: 30px;
+  width: 50px;
+}
+.prodMainImage{
+  width: 300px;
+  border: 1px solid #ebebeb;
+  margin-right: 30px;
+}
+.prodMainImage > img{
+  width: 100%;
+}
+.ProdThumnail{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #d7d7d7;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ProdThumnail:last-child{
+  margin-bottom: 0px;
+}
+.ProdThumnail > img{
+  width: 100%;
+}
+.productSpecFull{
+  width: calc(100% - 420px);
+}
+.storeLogo{
+  height: 22px;
+  margin-bottom: 15px;
+}
+.storeLogo > img{
+  height: 100%;
+}
+.ProductNameFull{
+  font-size: 16px;
+  font-weight: bold;
+}
+.ProdPriceSpec{
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.ProdPriceSpec label{
+  font-size: 14px;
+  font-weight: bold;
+  color: #b82126;
+}
+.moreSpec{
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.actionBtns{
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.actionBtns a{
+  font-weight: 700;
+  margin-right: 20px;
+  color: #cd6929;
+}
+.itemPreviewPage{
+  width: 100%;
+  border-left: 1px solid #ebebeb;
+}
+.xlPreview{
+  width: 45%;
+  max-height: 700px;
+}
+.previewSpec{
+  width: calc(65% - 110px);
+}
+.previewStore{
+  height: 32px;
+}
+.previewTitle{
+  font-size: 22px;
+}
+.previewPrice{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.previewPrice label{
+  font-size: 24px;
+  font-weight: bold;
+}
 @media only screen and (min-width: 1366px){
   .navbar-brand img{
     margin-top: 10px;
@@ -1149,5 +1314,33 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
     }
     .nav_rht li a{
       padding: 15px 15px;
+    }
+    .searchBox{
+      width: 90%;
+    }
+    .contentContainer{
+      flex-direction: column;
+    }
+    .contentSideBar{
+      width: 100%;
+    }
+    .SearchResults{
+      width: 100%;
+    }
+    .prodListingBox{
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .prodThumbBox{
+      margin-right: 20px;
+    }
+    .prodMainImage{
+      width: calc(100% - 70px);
+      min-height: 110px;
+      margin-right: 0px;
+    }
+    .productSpecFull{
+      width: 100%;
+      margin-top: 20px;
     }
 }
