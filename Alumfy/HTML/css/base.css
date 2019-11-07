@@ -13,8 +13,16 @@ body {
   height: 100%;
   top: 0px;
   bottom: 0px;
-  background-image: url("../images/background_alumfy.jpg");
-  background-size: 100%; }
+  background-image: url("../images/background_alumfy.jpg"); }
+  @media (min-width: 300px) {
+    .backgroundImage {
+      background-size: 150%; } }
+  @media (min-width: 992px) {
+    .backgroundImage {
+      background-size: 100%; } }
+  @media (min-width: 1600px) {
+    .backgroundImage {
+      background-size: 100%; } }
 
 .topHeader {
   width: 100%;
@@ -58,112 +66,165 @@ body {
   align-items: center; }
   @media (min-width: 300px) {
     .subHeader {
-      height: 130px; } }
+      height: auto;
+      flex-direction: column; } }
   @media (min-width: 992px) {
     .subHeader {
-      height: 130px; } }
+      height: 130px;
+      flex-direction: row; } }
   @media (min-width: 1600px) {
     .subHeader {
-      height: 200px; } }
-  .subHeader .loginBox {
-    width: 40%; }
-    .subHeader .loginBox h2 {
-      margin: 0px;
-      padding: 0px;
-      font-weight: bold;
-      font-size: 16px;
-      color: #585858;
-      padding-bottom: 10px; }
-      .subHeader .loginBox h2 span {
-        font-weight: normal; }
-    .subHeader .loginBox .formSection {
+      height: 200px;
+      flex-direction: row; } }
+  @media (min-width: 300px) {
+    .subHeader .loginBox {
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .subHeader .loginBox {
+      width: 40%; } }
+  @media (min-width: 1600px) {
+    .subHeader .loginBox {
+      width: 40%; } }
+  .subHeader .loginBox h2 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #585858;
+    padding-bottom: 10px; }
+    .subHeader .loginBox h2 span {
+      font-weight: normal; }
+  .subHeader .loginBox .formSection {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    @media (min-width: 300px) {
+      .subHeader .loginBox .formSection {
+        flex-direction: column; } }
+    @media (min-width: 992px) {
+      .subHeader .loginBox .formSection {
+        flex-direction: row; } }
+    @media (min-width: 1600px) {
+      .subHeader .loginBox .formSection {
+        flex-direction: row; } }
+    .subHeader .loginBox .formSection .logData {
       width: 100%;
-      display: flex;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      justify-content: space-between;
-      align-items: flex-start; }
-      .subHeader .loginBox .formSection .logData {
-        width: 100%;
-        padding-top: 10px;
-        color: #16181d; }
-        @media (min-width: 300px) {
-          .subHeader .loginBox .formSection .logData {
-            font-size: 11px; } }
-        @media (min-width: 992px) {
-          .subHeader .loginBox .formSection .logData {
-            font-size: 11px; } }
-        @media (min-width: 1600px) {
-          .subHeader .loginBox .formSection .logData {
-            font-size: 13px; } }
-      .subHeader .loginBox .formSection .loginPass .logData {
-        text-align: right; }
-        .subHeader .loginBox .formSection .loginPass .logData a {
-          color: #16181d;
-          text-decoration: none; }
+      padding-top: 10px;
+      color: #16181d; }
+      @media (min-width: 300px) {
+        .subHeader .loginBox .formSection .logData {
+          font-size: 11px;
+          text-align: left; } }
+      @media (min-width: 992px) {
+        .subHeader .loginBox .formSection .logData {
+          font-size: 11px;
+          text-align: left; } }
+      @media (min-width: 1600px) {
+        .subHeader .loginBox .formSection .logData {
+          font-size: 13px;
+          text-align: left; } }
+    .subHeader .loginBox .formSection .loginPass .logData {
+      text-align: right; }
+      @media (min-width: 300px) {
+        .subHeader .loginBox .formSection .loginPass .logData {
+          text-align: left; } }
+      @media (min-width: 992px) {
+        .subHeader .loginBox .formSection .loginPass .logData {
+          text-align: right; } }
+      @media (min-width: 1600px) {
+        .subHeader .loginBox .formSection .loginPass .logData {
+          text-align: right; } }
+      .subHeader .loginBox .formSection .loginPass .logData a {
+        color: #16181d;
+        text-decoration: none; }
+    @media (min-width: 300px) {
       .subHeader .loginBox .formSection .loginText,
       .subHeader .loginBox .formSection .loginPass {
-        width: 40%; }
+        width: 100%; } }
+    @media (min-width: 992px) {
+      .subHeader .loginBox .formSection .loginText,
+      .subHeader .loginBox .formSection .loginPass {
+        width: 40%; } }
+    @media (min-width: 1600px) {
+      .subHeader .loginBox .formSection .loginText,
+      .subHeader .loginBox .formSection .loginPass {
+        width: 40%; } }
+    .subHeader .loginBox .formSection .loginText input[type=text],
+    .subHeader .loginBox .formSection .loginText input[type=password],
+    .subHeader .loginBox .formSection .loginPass input[type=text],
+    .subHeader .loginBox .formSection .loginPass input[type=password] {
+      width: 100%;
+      background-color: #fff;
+      border: 2px solid #e1e1e1;
+      border-radius: 30px;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      width: 100%; }
+      @media (min-width: 300px) {
         .subHeader .loginBox .formSection .loginText input[type=text],
         .subHeader .loginBox .formSection .loginText input[type=password],
         .subHeader .loginBox .formSection .loginPass input[type=text],
         .subHeader .loginBox .formSection .loginPass input[type=password] {
-          width: 100%;
-          background-color: #fff;
-          border: 2px solid #e1e1e1;
-          border-radius: 30px;
-          box-sizing: border-box;
-          font-family: 'Poppins', sans-serif;
-          width: 100%; }
-          @media (min-width: 300px) {
-            .subHeader .loginBox .formSection .loginText input[type=text],
-            .subHeader .loginBox .formSection .loginText input[type=password],
-            .subHeader .loginBox .formSection .loginPass input[type=text],
-            .subHeader .loginBox .formSection .loginPass input[type=password] {
-              padding: 8px 12px;
-              font-size: 12px; } }
-          @media (min-width: 992px) {
-            .subHeader .loginBox .formSection .loginText input[type=text],
-            .subHeader .loginBox .formSection .loginText input[type=password],
-            .subHeader .loginBox .formSection .loginPass input[type=text],
-            .subHeader .loginBox .formSection .loginPass input[type=password] {
-              padding: 8px 15px;
-              font-size: 12px; } }
-          @media (min-width: 1600px) {
-            .subHeader .loginBox .formSection .loginText input[type=text],
-            .subHeader .loginBox .formSection .loginText input[type=password],
-            .subHeader .loginBox .formSection .loginPass input[type=text],
-            .subHeader .loginBox .formSection .loginPass input[type=password] {
-              padding: 10px 20px;
-              font-size: 13px; } }
-      .subHeader .loginBox .formSection .logBtn {
-        background-color: #002379;
-        border: none;
-        border-radius: 30px;
-        color: #fff;
-        font-family: 'Poppins', sans-serif; }
-        @media (min-width: 300px) {
-          .subHeader .loginBox .formSection .logBtn {
-            padding: 10px 20px;
-            font-size: 12px; } }
-        @media (min-width: 992px) {
-          .subHeader .loginBox .formSection .logBtn {
-            padding: 10px 25px;
-            font-size: 12px; } }
-        @media (min-width: 1600px) {
-          .subHeader .loginBox .formSection .logBtn {
-            padding: 12px 35px;
-            font-size: 13px; } }
+          padding: 8px 12px;
+          font-size: 12px; } }
+      @media (min-width: 992px) {
+        .subHeader .loginBox .formSection .loginText input[type=text],
+        .subHeader .loginBox .formSection .loginText input[type=password],
+        .subHeader .loginBox .formSection .loginPass input[type=text],
+        .subHeader .loginBox .formSection .loginPass input[type=password] {
+          padding: 8px 15px;
+          font-size: 12px; } }
+      @media (min-width: 1600px) {
+        .subHeader .loginBox .formSection .loginText input[type=text],
+        .subHeader .loginBox .formSection .loginText input[type=password],
+        .subHeader .loginBox .formSection .loginPass input[type=text],
+        .subHeader .loginBox .formSection .loginPass input[type=password] {
+          padding: 10px 20px;
+          font-size: 13px; } }
+    .subHeader .loginBox .formSection .logBtn {
+      background-color: #002379;
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      font-family: 'Poppins', sans-serif; }
+      @media (min-width: 300px) {
+        .subHeader .loginBox .formSection .logBtn {
+          padding: 10px 20px;
+          font-size: 12px; } }
+      @media (min-width: 992px) {
+        .subHeader .loginBox .formSection .logBtn {
+          padding: 10px 25px;
+          font-size: 12px; } }
+      @media (min-width: 1600px) {
+        .subHeader .loginBox .formSection .logBtn {
+          padding: 12px 35px;
+          font-size: 13px; } }
   .subHeader .signBox {
-    width: 50%;
     margin-left: auto;
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
-    align-items: center;
-    justify-content: flex-end; }
+    align-items: center; }
+    @media (min-width: 300px) {
+      .subHeader .signBox {
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 20px; } }
+    @media (min-width: 992px) {
+      .subHeader .signBox {
+        width: 50%;
+        justify-content: flex-end;
+        padding-bottom: 0px; } }
+    @media (min-width: 1600px) {
+      .subHeader .signBox {
+        width: 50%;
+        justify-content: flex-end;
+        padding-bottom: 0px; } }
     .subHeader .signBox span {
       color: #585858; }
       @media (min-width: 300px) {
@@ -195,24 +256,8 @@ body {
           padding: 12px 35px;
           font-size: 13px; } }
 
-.footerBox {
-  width: 100%;
-  position: fixed;
-  bottom: 0px;
-  background-color: #fff; }
-  @media (min-width: 300px) {
-    .footerBox {
-      height: 73px; } }
-  @media (min-width: 992px) {
-    .footerBox {
-      height: 73px; } }
-  @media (min-width: 1600px) {
-    .footerBox {
-      height: 107px; } }
-
 .searchBox {
   width: 100%;
-  height: calc(50% - 140px);
   display: flex;
   display: -webkit-flex;
   display: -moz-flex;
@@ -220,24 +265,44 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  @media (min-width: 300px) {
+    .searchBox {
+      height: auto; } }
+  @media (min-width: 992px) {
+    .searchBox {
+      height: calc(50% - 140px); } }
+  @media (min-width: 1600px) {
+    .searchBox {
+      height: calc(50% - 215px); } }
   .searchBox .searchLabel {
-    color: rgba(255, 255, 255, 0.6);
+    color: #fff;
     text-align: center; }
     @media (min-width: 300px) {
       .searchBox .searchLabel {
         font-size: 22px;
-        padding-bottom: 30px; } }
+        padding-bottom: 30px;
+        padding-top: 20px; } }
     @media (min-width: 992px) {
       .searchBox .searchLabel {
         font-size: 22px;
-        padding-bottom: 30px; } }
+        padding-bottom: 30px;
+        padding-top: 0px; } }
     @media (min-width: 1600px) {
       .searchBox .searchLabel {
         font-size: 34px;
-        padding-bottom: 54px; } }
+        padding-bottom: 24px;
+        padding-top: 0px; } }
   .searchBox .searchInput {
-    position: relative;
-    width: 40%; }
+    position: relative; }
+    @media (min-width: 300px) {
+      .searchBox .searchInput {
+        width: 80%; } }
+    @media (min-width: 992px) {
+      .searchBox .searchInput {
+        width: 40%; } }
+    @media (min-width: 1600px) {
+      .searchBox .searchInput {
+        width: 40%; } }
     .searchBox .searchInput input[type=text] {
       width: 100%;
       font-family: 'Poppins', sans-serif;
@@ -298,5 +363,117 @@ body {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: rgba(0, 0, 0, 0.3); }
+
+.welcomeNote {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0px 30px;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column; }
+  @media (min-width: 300px) {
+    .welcomeNote {
+      height: auto; } }
+  @media (min-width: 992px) {
+    .welcomeNote {
+      height: calc(50% - 140px); } }
+  @media (min-width: 1600px) {
+    .welcomeNote {
+      height: calc(50% - 215px); } }
+  .welcomeNote h3 {
+    font-weight: 900;
+    color: #fff;
+    margin: 0px; }
+    .welcomeNote h3 span {
+      font-weight: normal; }
+    @media (min-width: 300px) {
+      .welcomeNote h3 {
+        font-size: 16px; } }
+    @media (min-width: 992px) {
+      .welcomeNote h3 {
+        font-size: 16px; } }
+    @media (min-width: 1600px) {
+      .welcomeNote h3 {
+        font-size: 24px; } }
+  .welcomeNote h4 {
+    font-weight: normal;
+    color: #fff;
+    margin: 0px; }
+    @media (min-width: 300px) {
+      .welcomeNote h4 {
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 20px; } }
+    @media (min-width: 992px) {
+      .welcomeNote h4 {
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 0px; } }
+    @media (min-width: 1600px) {
+      .welcomeNote h4 {
+        font-size: 34px;
+        margin-top: 30px;
+        margin-bottom: 0px; } }
+
+.footerBox {
+  width: 100%;
+  bottom: 0px;
+  background-color: #fff;
+  padding: 0px 30px;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media (min-width: 300px) {
+    .footerBox {
+      height: 73px;
+      position: relative;
+      flex-direction: column; } }
+  @media (min-width: 992px) {
+    .footerBox {
+      height: 73px;
+      position: fixed;
+      flex-direction: row; } }
+  @media (min-width: 1600px) {
+    .footerBox {
+      height: 107px;
+      position: fixed;
+      flex-direction: row; } }
+  .footerBox .linkBox {
+    color: #585858; }
+    .footerBox .linkBox a {
+      text-decoration: none;
+      color: #585858; }
+  .footerBox .copyBox {
+    color: #585858; }
+  @media (min-width: 300px) {
+    .footerBox .linkBox,
+    .footerBox .copyBox {
+      font-size: 12px; } }
+  @media (min-width: 992px) {
+    .footerBox .linkBox,
+    .footerBox .copyBox {
+      font-size: 12px; } }
+  @media (min-width: 1600px) {
+    .footerBox .linkBox,
+    .footerBox .copyBox {
+      font-size: 14px; } }
+  .footerBox .corporateLogo img {
+    width: 100%; }
+  @media (min-width: 300px) {
+    .footerBox .corporateLogo {
+      width: 45px; } }
+  @media (min-width: 992px) {
+    .footerBox .corporateLogo {
+      width: 45px; } }
+  @media (min-width: 1600px) {
+    .footerBox .corporateLogo {
+      width: 68px; } }
 
 /*# sourceMappingURL=base.css.map */

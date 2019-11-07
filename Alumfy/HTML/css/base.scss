@@ -19,7 +19,18 @@ body {
     top: 0px;
     bottom: 0px;
     background-image: url('../images/background_alumfy.jpg');
-    background-size: 100%;
+    
+    @include media-breakpoint-up(sm) {
+        background-size: 150%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        background-size: 100%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        background-size: 100%;
+    }
 }
 
 .topHeader {
@@ -70,19 +81,33 @@ body {
     align-items: center;
 
     @include media-breakpoint-up(sm) {
-        height: 130px;
+        height: auto;
+        flex-direction: column;
     }
 
     @include media-breakpoint-up(lg) {
         height: 130px;
+        flex-direction: row;
     }
 
     @include media-breakpoint-up(xl) {
         height: 200px;
+        flex-direction: row;
     }
 
     .loginBox {
+        
+        @include media-breakpoint-up(sm) {
+        width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
         width: 40%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 40%;
+    }
 
         h2 {
             margin: 0px;
@@ -102,7 +127,17 @@ body {
             @include flex;
             justify-content: space-between;
             align-items: flex-start;
+			@include media-breakpoint-up(sm) {
+        flex-direction: column;
+    }
 
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+    }
+
+    @include media-breakpoint-up(xl) {
+        flex-direction: row;
+    }
             .logData {
                 width: 100%;
                 padding-top: 10px;
@@ -110,14 +145,17 @@ body {
 
                 @include media-breakpoint-up(sm) {
                     font-size: 11px;
+                    text-align: left;
                 }
 
                 @include media-breakpoint-up(lg) {
                     font-size: 11px;
+                    text-align: left;
                 }
 
                 @include media-breakpoint-up(xl) {
                     font-size: 13px;
+                    text-align: left;
                 }
             }
 
@@ -131,6 +169,17 @@ body {
                 .logData {
                     //padding-right: 15px;
                     text-align: right;
+                    @include media-breakpoint-up(sm) {
+                    text-align: left;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    text-align: right;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    text-align: right;
+                }
 
                     a {
                         color: #16181d;
@@ -141,8 +190,18 @@ body {
 
             .loginText,
             .loginPass {
-                width: 40%;
+                
+			@include media-breakpoint-up(sm) {
+        width: 100%;
+    }
 
+    @include media-breakpoint-up(lg) {
+        width: 40%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 40%;
+    }
                 input[type=text],
                 input[type=password] {
                     width: 100%;
@@ -196,12 +255,27 @@ body {
     }
 
     .signBox {
-        width: 50%;
         margin-left: auto;
         @include flex;
         align-items: center;
-        justify-content: flex-end;
+        
+		@include media-breakpoint-up(sm) {
+	        width: 100%;
+	        justify-content: center;
+	        padding-bottom: 20px;
+	    }
 
+	    @include media-breakpoint-up(lg) {
+	        width: 50%;
+	        justify-content: flex-end;
+	        padding-bottom: 0px;
+	    }
+
+	    @include media-breakpoint-up(xl) {
+	        width: 50%;
+	        justify-content: flex-end;
+	        padding-bottom: 0px;
+	    }
         span {
             color: #585858;
 
@@ -244,57 +318,66 @@ body {
     }
 }
 
-.footerBox {
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    background-color: #fff;
 
-    @include media-breakpoint-up(sm) {
-        height: 73px;
-    }
-
-    @include media-breakpoint-up(lg) {
-        height: 73px;
-    }
-
-    @include media-breakpoint-up(xl) {
-        height: 107px;
-    }
-}
 
 .searchBox {
     width: 100%;
-    height: calc(50% - 140px);
+
+    @include media-breakpoint-up(sm) {
+        height: auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: calc(50% - 140px);
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: calc(50% - 215px);
+    }
+
     @include flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
     .searchLabel {
-        color: rgba(255, 255, 255, .6);
+        color: #fff;
         text-align: center;
 
 
         @include media-breakpoint-up(sm) {
             font-size: 22px;
             padding-bottom: 30px;
+            padding-top: 20px;
         }
 
         @include media-breakpoint-up(lg) {
             font-size: 22px;
             padding-bottom: 30px;
+            padding-top: 0px;
         }
 
         @include media-breakpoint-up(xl) {
             font-size: 34px;
-            padding-bottom: 54px;
+            padding-bottom: 24px;
+            padding-top: 0px;
         }
     }
 
     .searchInput {
         position: relative;
+        
+        @include media-breakpoint-up(sm) {
+        width: 80%;
+    }
+
+    @include media-breakpoint-up(lg) {
         width: 40%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 40%;
+    }
 
         input[type=text] {
             width: 100%;
@@ -302,7 +385,7 @@ body {
             border-radius: 40px;
             border: none;
             background-color: #fff;
-            color: rgba(0,0,0,.6);
+            color: rgba(0, 0, 0, .6);
 
 
             @include media-breakpoint-up(sm) {
@@ -331,39 +414,189 @@ body {
             border: none;
             cursor: pointer;
             background-color: transparent;
-            img{
-            	width: 100%;
+
+            img {
+                width: 100%;
             }
 
             @include media-breakpoint-up(sm) {
-            	width: 44px;
-            	height: 44px;
-            	padding: 10px 12px;
+                width: 44px;
+                height: 44px;
+                padding: 10px 12px;
             }
 
             @include media-breakpoint-up(lg) {
-            	width: 44px;
-            	height: 44px;
-            	padding: 10px 12px;
+                width: 44px;
+                height: 44px;
+                padding: 10px 12px;
             }
 
             @include media-breakpoint-up(xl) {
-            	width: 66px;
-            	height: 66px;
-            	padding: 10px 20px;
+                width: 66px;
+                height: 66px;
+                padding: 10px 20px;
             }
         }
     }
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgba(0,0,0,.3);
-  opacity: 1; /* Firefox */
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0, 0, 0, .3);
+    opacity: 1;
+    /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: rgba(0,0,0,.3);
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(0, 0, 0, .3);
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: rgba(0,0,0,.3);
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(0, 0, 0, .3);
+}
+
+.welcomeNote {
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+        height: auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: calc(50% - 140px);
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: calc(50% - 215px);
+    }
+
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    padding: 0px 30px;
+    @include flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    h3 {
+        font-weight: 900;
+        color: #fff;
+        margin: 0px;
+
+        span {
+            font-weight: normal;
+        }
+
+        @include media-breakpoint-up(sm) {
+            font-size: 16px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 16px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 24px;
+        }
+    }
+
+    h4 {
+        font-weight: normal;
+        color: #fff;
+        margin: 0px;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 22px;
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 22px;
+            margin-top: 20px;
+            margin-bottom: 0px
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 34px;
+            margin-top: 30px;
+            margin-bottom: 0px
+        }
+    }
+}
+
+.footerBox {
+    width: 100%;
+    
+    bottom: 0px;
+    background-color: #fff;
+    padding: 0px 30px;
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-breakpoint-up(sm) {
+        height: 73px;
+        position: relative;
+        flex-direction: column;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 73px;
+        position: fixed;
+        flex-direction: row;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 107px;
+        position: fixed;
+        flex-direction: row;
+    }
+
+    .linkBox {
+        color: #585858;
+
+        a {
+            text-decoration: none;
+            color: #585858;
+        }
+    }
+
+    .copyBox {
+        color: #585858;
+    }
+
+    .linkBox,
+    .copyBox {
+        @include media-breakpoint-up(sm) {
+            font-size: 12px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 12px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 14px;
+        }
+    }
+
+    .corporateLogo {
+        img {
+            width: 100%;
+        }
+
+        @include media-breakpoint-up(sm) {
+            width: 45px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 45px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 68px;
+        }
+    }
 }
