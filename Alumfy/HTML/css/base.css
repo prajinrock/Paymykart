@@ -8,21 +8,25 @@ body {
   outline: none; }
 
 .backgroundImage {
-  position: absolute;
   width: 100%;
-  height: 100%;
   top: 0px;
   bottom: 0px;
   background-image: url("../images/background_alumfy.jpg"); }
   @media (min-width: 300px) {
     .backgroundImage {
-      background-size: 150%; } }
+      background-size: 150%;
+      height: 100%;
+      position: relative; } }
   @media (min-width: 992px) {
     .backgroundImage {
-      background-size: 100%; } }
+      background-size: 100%;
+      height: 100%;
+      position: absolute; } }
   @media (min-width: 1600px) {
     .backgroundImage {
-      background-size: 100%; } }
+      background-size: 100%;
+      height: 100%;
+      position: absolute; } }
 
 .topHeader {
   width: 100%;
@@ -531,7 +535,7 @@ body {
           margin-top: 10px; } }
       @media (min-width: 992px) {
         .darkOverlay .singUpBox h3 {
-          font-size: 14px;
+          font-size: 11px;
           margin-bottom: 20px;
           margin-top: 15px; } }
       @media (min-width: 1600px) {
@@ -574,5 +578,48 @@ body {
         background-color: #fff;
         position: relative;
         padding: 0px 25px; }
+    .darkOverlay .singUpBox button {
+      width: 100%;
+      display: flex;
+      font-family: 'Poppins', sans-serif; }
+      .darkOverlay .singUpBox button img {
+        height: 20px;
+        display: inline-block;
+        margin-right: 10px; }
+      @media (min-width: 300px) {
+        .darkOverlay .singUpBox button {
+          padding: 8px 10px;
+          margin-top: 8px;
+          font-size: 12px; } }
+      @media (min-width: 992px) {
+        .darkOverlay .singUpBox button {
+          padding: 10px 15px;
+          margin-top: 10px;
+          font-size: 13px; } }
+      @media (min-width: 1600px) {
+        .darkOverlay .singUpBox button {
+          padding: 18px 24px;
+          margin-top: 15px;
+          font-size: 16px; } }
+    .darkOverlay .singUpBox .loginFb {
+      color: #fff;
+      background-color: #4262ab;
+      border: 1px solid #4262ab;
+      border-radius: 3px;
+      text-align: left; }
+    .darkOverlay .singUpBox .loginGg {
+      color: #585858;
+      background-color: #fff;
+      border: 1px solid #e4e4e4;
+      border-radius: 3px;
+      text-align: left; }
+    .darkOverlay .singUpBox .submitBtn {
+      color: #fff;
+      background-color: #002377;
+      border: 1px solid #002377;
+      border-radius: 3px;
+      text-align: left;
+      margin-top: 0px;
+      justify-content: center; }
 
 /*# sourceMappingURL=base.css.map */

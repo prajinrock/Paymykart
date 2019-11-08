@@ -13,23 +13,29 @@ body {
 }
 
 .backgroundImage {
-    position: absolute;
+    
     width: 100%;
-    height: 100%;
+    
     top: 0px;
     bottom: 0px;
     background-image: url('../images/background_alumfy.jpg');
 
     @include media-breakpoint-up(sm) {
         background-size: 150%;
+        height: 100%;
+        position: relative;
     }
 
     @include media-breakpoint-up(lg) {
         background-size: 100%;
+        height: 100%;
+        position: absolute;
     }
 
     @include media-breakpoint-up(xl) {
         background-size: 100%;
+        height: 100%;
+        position: absolute;
     }
 }
 
@@ -669,7 +675,7 @@ body {
             }
 
             @include media-breakpoint-up(lg) {
-                font-size: 14px;
+                font-size: 11px;
                 margin-bottom: 20px;
                 margin-top: 15px;
             }
@@ -721,6 +727,56 @@ body {
         		position: relative;
         		padding: 0px 25px;
         	}
+        }
+        button{
+        	width: 100%;
+        	display: flex;
+        	font-family: 'Poppins', sans-serif;
+        	img{
+        		height: 20px;
+        		display: inline-block;
+        		margin-right: 10px;
+        	}
+        	@include media-breakpoint-up(sm) {
+            	padding: 8px 10px;
+            	margin-top: 8px;
+            	font-size: 12px;
+            }
+
+            @include media-breakpoint-up(lg) {
+            	padding: 10px 15px;
+            	margin-top: 10px;
+            	font-size: 13px;
+            }
+
+            @include media-breakpoint-up(xl) {
+            	padding: 18px 24px;
+            	margin-top: 15px;
+            	font-size: 16px;
+            }
+        }
+        .loginFb{
+        	color: #fff;
+        	background-color: #4262ab;
+        	border:1px solid #4262ab;
+        	border-radius:3px;
+        	text-align: left;
+        }
+        .loginGg{
+        	color: #585858;
+        	background-color: #fff;
+        	border:1px solid #e4e4e4;
+        	border-radius:3px;
+        	text-align: left;
+        }
+        .submitBtn{
+			color: #fff;
+        	background-color: #002377;
+        	border:1px solid #002377;
+        	border-radius:3px;
+        	text-align: left;
+        	margin-top: 0px;
+        	justify-content: center;
         }
     }
 }
